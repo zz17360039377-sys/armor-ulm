@@ -34,13 +34,17 @@ RoboMaster 装甲板检测 + 四角点：一次前向输出 **框 + 车辆类别
 <img src="examples/demo/cases/case_outpost_red.jpg" width="49%"> <img src="examples/demo/cases/case_gray_death.jpg" width="49%">
 <img src="examples/demo/cases/case_close_4_red.jpg" width="49%"> <img src="examples/demo/cases/case_multi_color.jpg" width="49%">
 
-红框红方 / 蓝框蓝方 / 灰框灰甲 / 黄线四角点。
+红框红方 / 蓝框蓝方 / 灰框灰甲 / 四角点。
 
-## 许可与参考
+## 参考
 
-- 代码与权重：AGPL-3.0.
+- 代码与权重：AGPL-3.0（继承 Ultralytics，闭源商用需其 Enterprise License）。
 - 论文：YOLO-ULM, Han et al., CVPR 2026 —— `D3Block/D3C2f/RepDown/FoCIoU` 按论文 3.1–3.3 节**独立实现**.
 - 标注思路参考**深圳大学 RobotPilots 战队**
   【RM2026-视觉模型统一部署库与识别模型开源】<https://bbs.robomaster.com/article/1942761>.本项目使用了该战队开源的权重进行了部分数据标注，特别感谢深圳大学 RobotPilots 战队的开源方案和权重。
 - 同时感谢河北科技大学 Actor&Thinker 战队等开源方案的战队.
 - 本项目使用了上述开源的权重进行对比，对比结果不进行公开，再次感谢开源的战队。
+
+## 联系方式
+
+qq: 1352234739

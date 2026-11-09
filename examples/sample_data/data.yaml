@@ -1,0 +1,44 @@
+path: .
+train: images/train
+val: images/train
+
+nc_vehicle: 7          # 0 哨兵, 1~4 一~四号, 5 前哨站, 6 基地
+nc_color: 3            # 0 红, 1 蓝, 2 灰(死亡)
+nc: 21                 # 必须 = nc_color x nc_vehicle
+
+kpt_shape: [4, 3]      # 四角点 [lt, lb, rb, rt] x (x, y, visible)
+flip_idx: [1, 0, 3, 2]
+
+vehicle_names:
+  0: sentry
+  1: no1
+  2: no2
+  3: no3
+  4: no4
+  5: outpost
+  6: base
+
+# names 顺序必须「颜色外层、车辆内层」:
+# 0..6 红 x 车辆0..6, 7..13 蓝 x 车辆0..6, 14..20 灰 x 车辆0..6
+names:
+  0: red_sentry
+  1: red_no1
+  2: red_no2
+  3: red_no3
+  4: red_no4
+  5: red_outpost
+  6: red_base
+  7: blue_sentry
+  8: blue_no1
+  9: blue_no2
+  10: blue_no3
+  11: blue_no4
+  12: blue_outpost
+  13: blue_base
+  14: gray_sentry
+  15: gray_no1
+  16: gray_no2
+  17: gray_no3
+  18: gray_no4
+  19: gray_outpost
+  20: gray_base

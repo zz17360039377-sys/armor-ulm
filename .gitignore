@@ -1,0 +1,25 @@
+# 训练/推理产物
+runs/
+*.pt.tmp
+.preview/
+
+# ultralytics 数据缓存 & 日志
+*.cache
+*.log
+datasets/
+wandb/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+
+# 导出产物(权重仓库里已包含发布版 .onnx; 自己重新导出的不入库)
+*.engine
+*.trt
+*.openvino/
+*_openvino_model/
+*.torchscript
